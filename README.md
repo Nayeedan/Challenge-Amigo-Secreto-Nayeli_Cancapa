@@ -21,5 +21,6 @@ Con **Amigo Secreto**, puedes:
 4. Haz clic en **"Sortear amigo"** para elegir uno al azar.
 5. Usa **"Reiniciar"** para comenzar de nuevo.
 
- DEMO:
+ ## DEMO
+ 
  <img width="1303" height="878" alt="image" src="https://github.com/user-attachments/assets/4c25070a-c766-4954-b999-39490060160d" />
