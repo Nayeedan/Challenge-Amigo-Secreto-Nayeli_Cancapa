@@ -1,0 +1,178 @@
+/* Variables de color */
+:root {
+    --color-primary: #6A0066;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #FF9A9A;
+    --color-button: #932F67;
+    --color-button-hover: #6d2c8b;
+    --color-text: #000000;
+    --color-white: #FFFFFF;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenido principal */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Encabezado con imagen */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.header-banner img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Campo de entrada */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* Botón "Añadir" */
+.button-add {
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 0 25px 25px 0;
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button-add:hover {
+    background-color: #da96d6;
+}
+
+/* Listas */
+.name-list,
+.result-list {
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: var(--color-text);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #6A0066;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Contenedor de botones principales */
+.button-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+/* Botones: Sortear y Reiniciar (mismo estilo) */
+.button-draw,
+.button-reset {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 15px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-draw:hover,
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-2px);
+}
+
+/* Íconos dentro de los botones */
+.button-draw img,
+.button-reset img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
